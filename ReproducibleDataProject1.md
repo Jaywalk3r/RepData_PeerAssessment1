@@ -17,11 +17,15 @@ library( dplyr)
 ```
 ## 
 ## Attaching package: 'dplyr'
-## 
+```
+
+```
 ## The following objects are masked from 'package:stats':
 ## 
 ##     filter, lag
-## 
+```
+
+```
 ## The following objects are masked from 'package:base':
 ## 
 ##     intersect, setdiff, setequal, union
@@ -106,7 +110,7 @@ We want a histogram of the number of steps taken daily. Note that we scaled the 
 hist( daily.steps.total$total.steps, main = "Histogram of total steps taken daily", xlab = "Total steps", ylab = "Frequency (in days)", ylim = range( 0:40))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![](ReproducibleDataProject1_files/figure-html/unnamed-chunk-4-1.png)
 
 We also calculate the median and mean number of steps taken daily.
 
@@ -150,7 +154,7 @@ Instead of displaying the mean number of steps taken during each interval of the
 plot( interval.mean$interval, interval.mean$mean.steps, type = "l")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
+![](ReproducibleDataProject1_files/figure-html/unnamed-chunk-7-1.png)
 
 We want to know in which interval of the day our subject is most active.
 
@@ -320,7 +324,7 @@ Now we plot a histogram with the missing values replaced. We use the same scale 
 hist( daily.steps.total$total.steps, main = "Histogram of total steps taken daily", xlab = "Total steps", ylab = "Frequency (in days)", ylim = range( 0:40))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-14-1.png) 
+![](ReproducibleDataProject1_files/figure-html/unnamed-chunk-14-1.png)
 
 We see that only our center bin increases in size compared to when we ignored the missing values.
 
@@ -398,7 +402,7 @@ plot( interval.mean.we$interval, interval.mean.we$mean.steps, type = "l", main =
 plot( interval.mean.wd$interval, interval.mean.wd$mean.steps, type = "l", main = "Weekday", ylab = "Mean step count", xlab = "Time interval", ylim = range( 0:250))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-18-1.png) 
+![](ReproducibleDataProject1_files/figure-html/unnamed-chunk-18-1.png)
 
 ```r
 	# line plot with x = interval and y = mean number of steps
